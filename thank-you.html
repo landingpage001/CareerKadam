@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="hi-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Thank You – Degree Hai, Job Kahan Hai?</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5f6ff;--card:#fff;--ink:#14173d;--mute:#5b6086;--brand:#3a5bff;--brand2:#e040fb;--teal:#00c2a8;--amber:#ffb020;--line:#dfe2f7;--shadow:rgba(40,40,120,.16);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1030;--card:#171a45;--ink:#eef0ff;--mute:#a9aee0;--line:#2b2f66;--shadow:rgba(0,0,0,.5)}}
+:root[data-theme="dark"]{--bg:#0e1030;--card:#171a45;--ink:#eef0ff;--mute:#a9aee0;--line:#2b2f66;--shadow:rgba(0,0,0,.5)}
+*,*:before,*:after{box-sizing:border-box}
+html{height:100%}
+body{margin:0;min-height:100%;background-color:var(--bg);background-image:linear-gradient(120deg,rgba(58,91,255,.18),rgba(224,64,251,.15),rgba(0,194,168,.18),rgba(58,91,255,.18));background-size:300% 300%;animation:gs 14s ease infinite;color:var(--ink);font:400 1rem/1.65 "DM Sans",system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:"Bricolage Grotesque","DM Sans",sans-serif;line-height:1.12;letter-spacing:-.02em;margin:0 0 .5em}
+p{margin:0 0 1em;color:var(--mute)}
+canvas{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:5}
+.blob{position:fixed;border-radius:50%;filter:blur(70px);opacity:.4;animation:bm 12s ease-in-out infinite;z-index:0}
+.b1{width:320px;height:320px;background:#e040fb;top:-80px;right:-60px}
+.b2{width:300px;height:300px;background:#00c2a8;bottom:-90px;left:-60px;animation-delay:-5s}
+main{position:relative;z-index:1;max-width:760px;margin:0 auto;padding:48px 20px 56px;text-align:center}
+.tick{width:92px;height:92px;margin:0 auto 22px;border-radius:50%;background:linear-gradient(135deg,var(--brand),var(--teal));display:grid;place-items:center;box-shadow:0 18px 40px rgba(58,91,255,.4);animation:pop .7s cubic-bezier(.2,1.6,.4,1) both}
+.tick svg{width:46px;height:46px;stroke:#fff;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:60;stroke-dashoffset:60;animation:draw .6s .5s forwards}
+h1{font-size:clamp(2rem,6vw,3.2rem);font-weight:800}
+h1 span{background:linear-gradient(90deg,var(--brand),var(--brand2),var(--teal),var(--brand));background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:gs 6s linear infinite}
+.lead{font-size:1.1rem;max-width:32em;margin:0 auto 26px}
+.btn{position:relative;overflow:hidden;display:inline-block;background:var(--amber);color:#2a1c00;font-weight:700;padding:16px 32px;border-radius:14px;text-decoration:none;box-shadow:0 6px 0 #d98f00,0 14px 24px rgba(255,176,32,.35);transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 9px 0 #d98f00,0 20px 30px rgba(255,176,32,.4)}
+.btn:active{transform:translateY(4px);box-shadow:0 2px 0 #d98f00}
+.btn:after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.65),transparent);transform:skewX(-20deg);animation:sh 3.2s ease-in-out infinite}
+a:focus-visible{outline:3px solid var(--brand);outline-offset:3px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:46px 0 30px;perspective:1000px;text-align:left}
+.st{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px;transition:transform .25s,box-shadow .25s,border-color .25s;opacity:0;animation:up .6s forwards}
+.st:nth-child(1){animation-delay:.5s}.st:nth-child(2){animation-delay:.7s}.st:nth-child(3){animation-delay:.9s}
+.st:hover{transform:rotateX(6deg) translateY(-8px);box-shadow:0 22px 40px var(--shadow);border-color:var(--brand)}
+.st b{display:grid;place-items:center;width:38px;height:38px;border-radius:12px;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;margin-bottom:12px;font-family:"Bricolage Grotesque",sans-serif}
+.st h3{font-size:1.05rem}.st p{font-size:.92rem;margin:0}
+.tip{background:var(--card);border:1px dashed var(--brand);border-radius:16px;padding:18px 20px;text-align:left}
+.tip p{margin:0}
+.help{margin-top:26px;font-size:.92rem}
+.help a{color:var(--brand);font-weight:700}
+@keyframes gs{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+@keyframes bm{50%{transform:translate(40px,30px) scale(1.15)}}
+@keyframes pop{from{transform:scale(0)}}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes sh{to{left:130%}}
+@keyframes up{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+@media (max-width:760px){.steps{grid-template-columns:1fr}main{padding-top:36px}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.st{opacity:1}.tick svg{stroke-dashoffset:0}}
+</style>
+</head>
+<body>
+<i class="blob b1"></i><i class="blob b2"></i>
+<canvas id="cf" aria-hidden="true"></canvas>
+<main>
+<div class="tick"><svg viewBox="0 0 50 50"><path d="M12 26l9 9 17-19"/></svg></div>
+<h1>Shukriya! <span>Aapka first-job safar shuru.</span></h1>
+<p class="lead">Aapne “Degree Hai, Job Kahan Hai?” choose ki, bahut badhiya decision. Neeche se apna PDF download karein aur aaj hi Chapter 1 se shuru karein.</p>
+<a class="btn" id="dl" href="#">📥 PDF download karo</a>
+
+<div class="steps">
+<div class="st"><b>1</b><h3>PDF download karo</h3><p>Phone ya laptop mein save kar lo, taaki kabhi bhi khol sako.</p></div>
+<div class="st"><b>2</b><h3>Chapter 1 ki exercise bharo</h3><p>Apna current career reality check likho. Sirf padhna nahi, karna zaroori hai.</p></div>
+<div class="st"><b>3</b><h3>30-day plan follow karo</h3><p>Roz ke checklist par tick karte jao, resume se interview tak.</p></div>
+</div>
+
+<div class="tip"><p><b>Tip:</b> Notebook ya Notion page bana lo aur har chapter ke baad apne answers wahan likho. Yeh aapka portfolio aur resume ka base banega.</p></div>
+<p class="help">Download mein dikkat? <a id="mail" href="#">Humein message karein</a></p>
+</main>
+<script>
+/* ====== EDIT HERE ====== */
+var CONFIG={downloadLink:"#",supportEmail:"your@email.com"};
+/* ======================= */
+document.getElementById("dl").href=CONFIG.downloadLink;
+document.getElementById("dl").setAttribute("download","");
+document.getElementById("mail").href="mailto:"+CONFIG.supportEmail;
+if(!matchMedia("(prefers-reduced-motion:reduce)").matches){
+var c=document.getElementById("cf"),x=c.getContext("2d"),W,H,P=[],cols=["#3a5bff","#e040fb","#00c2a8","#ffb020","#ff5d73"];
+function rs(){W=c.width=innerWidth;H=c.height=innerHeight}rs();addEventListener("resize",rs);
+for(var i=0;i<140;i++)P.push({x:Math.random()*W,y:-20-Math.random()*H*.6,w:6+Math.random()*7,h:10+Math.random()*8,v:2+Math.random()*3.5,s:(Math.random()-.5)*2,r:Math.random()*6,vr:(Math.random()-.5)*.25,c:cols[i%5]});
+var t0=performance.now();
+(function f(t){x.clearRect(0,0,W,H);var alive=0;P.forEach(function(p){p.y+=p.v;p.x+=p.s;p.r+=p.vr;if(p.y<H+20)alive=1;x.save();x.translate(p.x,p.y);x.rotate(p.r);x.fillStyle=p.c;x.fillRect(-p.w/2,-p.h/2,p.w,p.h);x.restore()});
+if(alive&&t-t0<9000)requestAnimationFrame(f);else x.clearRect(0,0,W,H)})(t0);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="hi-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Degree Hai, Job Kahan Hai? – First Job Roadmap for Indian Freshers</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5f6ff;--card:#fff;--ink:#14173d;--mute:#5b6086;--brand:#3a5bff;--brand2:#e040fb;--teal:#00c2a8;--amber:#ffb020;--line:#dfe2f7;--shadow:rgba(40,40,120,.16);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1030;--card:#171a45;--ink:#eef0ff;--mute:#a9aee0;--line:#2b2f66;--shadow:rgba(0,0,0,.5)}}
+:root[data-theme="dark"]{--bg:#0e1030;--card:#171a45;--ink:#eef0ff;--mute:#a9aee0;--line:#2b2f66;--shadow:rgba(0,0,0,.5)}
+html{scroll-behavior:smooth;scroll-padding-top:calc(70px + env(safe-area-inset-top,0px))}
+*,*:before,*:after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.65 "DM Sans",system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:"Bricolage Grotesque","DM Sans",sans-serif;line-height:1.12;margin:0 0 .5em;letter-spacing:-.02em}
+h1{font-size:clamp(2.2rem,6vw,4rem);font-weight:800}
+h2{font-size:clamp(1.7rem,4vw,2.6rem);font-weight:800}
+h3{font-size:1.15rem;font-weight:600}
+p{margin:0 0 1em;color:var(--mute)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+section{padding:72px 0}
+.btn{display:inline-block;background:var(--amber);color:#2a1c00;font-weight:700;padding:15px 28px;border-radius:14px;text-decoration:none;box-shadow:0 6px 0 #d98f00,0 14px 24px rgba(255,176,32,.35);transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 9px 0 #d98f00,0 20px 30px rgba(255,176,32,.4)}
+.btn:active{transform:translateY(4px);box-shadow:0 2px 0 #d98f00}
+.btn.ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 2px var(--line)}
+.btn.ghost:hover{box-shadow:inset 0 0 0 2px var(--brand);transform:translateY(-2px)}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--brand);outline-offset:3px}
+nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font:800 1.1rem "Bricolage Grotesque",sans-serif;color:var(--ink);text-decoration:none}
+.logo b{color:var(--brand)}
+nav .btn{padding:10px 18px;font-size:.9rem;box-shadow:0 4px 0 #d98f00}
+/* hero */
+.hero{padding:56px 0 80px;position:relative;overflow:hidden;background-color:var(--bg);background-image:linear-gradient(120deg,rgba(58,91,255,.18),rgba(224,64,251,.15),rgba(0,194,168,.18),rgba(58,91,255,.18));background-size:300% 300%;animation:gradshift 14s ease infinite}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.pill{display:inline-block;background:var(--card);border:1px solid var(--line);padding:6px 14px;border-radius:99px;font-size:.88rem;font-weight:500;margin-bottom:18px}
+.hero h1 span{background:linear-gradient(90deg,var(--brand),var(--brand2),var(--teal),var(--brand));background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:gradshift 6s linear infinite}
+.hero .sub{font-size:1.12rem;max-width:34em}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap;margin:26px 0 18px}
+.ticks{display:flex;gap:18px;flex-wrap:wrap;font-size:.92rem;color:var(--mute);padding:0;list-style:none;margin:0}
+.ticks li:before{content:"✓ ";color:var(--teal);font-weight:700}
+/* 3D book */
+.stage{perspective:1100px;height:480px;display:grid;place-items:center;position:relative}
+.book{width:250px;height:340px;position:relative;transform-style:preserve-3d;transform:rotateY(-28deg) rotateX(6deg);transition:transform .15s ease-out;animation:float 6s ease-in-out infinite}
+.book .f,.book .s,.book .b{position:absolute}
+.book .f{inset:0;border-radius:6px 14px 14px 6px;background:linear-gradient(145deg,#3a5bff,#a63df0 55%,#00c2a8);color:#fff;padding:26px 22px;transform:translateZ(22px);box-shadow:0 30px 50px rgba(30,20,120,.4);display:flex;flex-direction:column;justify-content:space-between;overflow:hidden}
+.book .f:after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,rgba(255,255,255,.25),transparent 40%);pointer-events:none}
+.book .f small{font-size:.75rem;opacity:.85}
+.book .f h3{font-size:1.9rem;font-weight:800;margin:0}
+.book .f em{font-style:normal;background:var(--amber);color:#2a1c00;font-weight:700;font-size:.78rem;padding:5px 10px;border-radius:8px;align-self:flex-start}
+.book .s{width:44px;height:100%;left:0;background:#312e81;transform:rotateY(-90deg) translateZ(22px);transform-origin:left;border-radius:4px 0 0 4px}
+.book .b{inset:0;background:#3730a3;transform:translateZ(-22px);border-radius:6px 14px 14px 6px}
+@keyframes float{50%{margin-top:-14px}}
+.chip{position:absolute;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:8px 14px;font-size:.84rem;font-weight:700;box-shadow:0 12px 24px var(--shadow);animation:bob 5s ease-in-out infinite}
+.c1{top:40px;left:2%}.c2{top:110px;right:0;animation-delay:-1.5s}.c3{bottom:60px;left:0;animation-delay:-3s}.c4{bottom:30px;right:6%;animation-delay:-2s}
+@keyframes bob{50%{transform:translateY(-12px)}}
+.hero .wrap{position:relative;z-index:1}
+.blob{position:absolute;border-radius:50%;filter:blur(60px);opacity:.5;animation:blobmove 12s ease-in-out infinite}
+.b1{width:340px;height:340px;background:#e040fb;top:-90px;right:-60px}
+.b2{width:300px;height:300px;background:#00c2a8;bottom:-100px;left:-60px;animation-delay:-4s}
+.b3{width:220px;height:220px;background:#3a5bff;top:40%;left:42%;animation-delay:-8s;opacity:.3}
+.shape{position:absolute;z-index:0;border:3px solid var(--brand);border-radius:8px;opacity:.35;animation:spin 18s linear infinite}
+.s1{width:46px;height:46px;top:18%;left:6%}
+.s2{width:30px;height:30px;bottom:14%;right:8%;border-color:var(--brand2);border-radius:50%;animation-duration:12s}
+.s3{width:24px;height:24px;top:12%;right:30%;border-color:var(--teal);animation-duration:22s}
+@keyframes gradshift{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+@keyframes blobmove{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(40px,30px) scale(1.15)}}
+@keyframes spin{to{transform:rotate(360deg) translateY(-14px)}}
+@keyframes marq{to{transform:translateX(-50%)}}
+@keyframes shine{to{left:130%}}
+@keyframes glow{50%{box-shadow:0 30px 60px rgba(58,91,255,.35),0 0 60px rgba(224,64,251,.45)}}
+.btn{position:relative;overflow:hidden}
+.btn:not(.ghost):after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.65),transparent);transform:skewX(-20deg);animation:shine 3.2s ease-in-out infinite}
+.book .f{animation:glow 4s ease-in-out infinite}
+.price .pcard{background:linear-gradient(160deg,#1b1f8f,#3a5bff 55%,#a63df0,#00c2a8);background-size:220% 220%;animation:gradshift 8s ease infinite,glow 4s ease-in-out infinite}
+.mq{overflow:hidden;background:linear-gradient(90deg,#3a5bff,#a63df0,#00c2a8);color:#fff;padding:14px 0;margin-top:70px;transform:rotate(-1.2deg);box-shadow:0 10px 30px var(--shadow)}
+.mq div{display:flex;gap:44px;width:max-content;white-space:nowrap;font:800 1.05rem "Bricolage Grotesque",sans-serif;animation:marq 24s linear infinite}
+.mq:hover div{animation-play-state:paused}
+.stat{transition:transform .25s,box-shadow .25s}
+.stat:hover{transform:translateY(-8px) rotateX(8deg);box-shadow:0 22px 40px var(--shadow)}
+.ico{transition:transform .35s}
+.tilt:hover .ico{transform:rotate(-10deg) scale(1.2)}
+.rv.in{transition:opacity .6s,transform .2s ease-out,box-shadow .2s,border-color .2s}
+/* stats */
+.stats{padding:0}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:-30px;position:relative}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;text-align:center;box-shadow:0 14px 30px var(--shadow)}
+.stat b{display:block;font:800 2rem "Bricolage Grotesque",sans-serif;color:var(--brand)}
+.stat span{font-size:.9rem;color:var(--mute)}
+/* tilt cards */
+.grid{display:grid;gap:20px;perspective:1000px}
+.g3{grid-template-columns:repeat(3,1fr)}.g2{grid-template-columns:repeat(2,1fr)}
+.tilt{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px;transform-style:preserve-3d;transition:transform .2s ease-out,box-shadow .2s,border-color .2s;will-change:transform}
+.tilt:hover{box-shadow:0 24px 44px var(--shadow);border-color:var(--brand)}
+.tilt>*{transform:translateZ(18px)}
+.tilt p{margin:0;font-size:.95rem}
+.ico{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;font-size:1.4rem;background:linear-gradient(135deg,rgba(79,70,229,.15),rgba(14,165,164,.18));margin-bottom:14px}
+.head{max-width:640px;margin-bottom:36px}
+.alt{background:linear-gradient(180deg,transparent,rgba(79,70,229,.07),transparent)}
+.pain .tilt{border-left:5px solid var(--amber)}
+/* compare */
+.cmp{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.cmp .tilt ul{margin:0;padding:0;list-style:none}
+.cmp li{padding:8px 0;border-bottom:1px dashed var(--line);color:var(--mute)}
+.cmp li:last-child{border:0}
+.no li:before{content:"✕ ";color:#e5484d;font-weight:700}
+.yes li:before{content:"✓ ";color:var(--teal);font-weight:700}
+.yes{border-color:var(--teal)}
+/* inside table */
+.tbl{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:480px}
+th,td{padding:14px 18px;text-align:left;border-bottom:1px solid var(--line);font-size:.95rem}
+th{background:rgba(79,70,229,.1)}
+tr:hover td{background:rgba(79,70,229,.06)}
+/* price */
+.price{display:grid;place-items:center;perspective:1000px}
+.pcard{max-width:460px;width:100%;background:linear-gradient(160deg,#1e1b6e,#4f46e5 70%,#7c3aed);color:#fff;border-radius:26px;padding:34px 28px;text-align:center;box-shadow:0 30px 60px rgba(40,30,160,.4);transform-style:preserve-3d}
+.pcard h2{color:#fff;font-size:1.7rem}
+.pcard p{color:#d8dbff}
+.amt{font:800 4rem "Bricolage Grotesque",sans-serif;line-height:1}
+.amt s{font-size:1.4rem;opacity:.6;margin-right:8px;font-weight:600}
+.pcard ul{text-align:left;list-style:none;padding:0;margin:22px 0}
+.pcard li{padding:7px 0;color:#eef0ff}
+.pcard li:before{content:"✓ ";color:var(--amber);font-weight:700}
+.pcard .btn{width:100%}
+.note{font-size:.82rem;margin-top:12px;color:#c4c8ff}
+/* faq */
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:12px;transition:border-color .2s}
+details:hover,details[open]{border-color:var(--brand)}
+summary{cursor:pointer;padding:18px 20px;font-weight:700;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";font-size:1.4rem;line-height:1;color:var(--brand);transition:transform .25s}
+details[open] summary:after{transform:rotate(45deg)}
+details p{padding:0 20px 18px;margin:0}
+footer{padding:36px 0 110px;border-top:1px solid var(--line);font-size:.85rem;color:var(--mute)}
+.sticky{display:none}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .6s,transform .6s}
+.rv.in{opacity:1;transform:none}
+@media (max-width:860px){
+section{padding:52px 0}
+.hero .wrap,.cmp{grid-template-columns:1fr}
+.g3,.g2{grid-template-columns:1fr}
+.stats .wrap{grid-template-columns:repeat(2,1fr)}
+.stage{height:420px}
+.sticky{display:block;position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--card);border-top:1px solid var(--line);padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));display:flex;align-items:center;justify-content:space-between;gap:12px}
+.sticky .btn{padding:12px 20px;box-shadow:0 4px 0 #d98f00}
+.sticky b{font:800 1.3rem "Bricolage Grotesque",sans-serif}
+}
+@media (min-width:861px){.sticky{display:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><a class="logo" href="#top">Degree<b>Hai</b>JobKahanHai</a><a class="btn" href="#buy" data-buy>Ebook lo</a></div></nav>
+
+<header class="hero" id="top"><i class="blob b1"></i><i class="blob b2"></i><i class="blob b3"></i><i class="shape s1"></i><i class="shape s2"></i><i class="shape s3"></i><div class="wrap">
+<div>
+<span class="pill">🎓 Edition 2026 · BA, BCom, BSc, BBA, BCA, BTech ke liye</span>
+<h1>Degree toh hai. <span>Ab pehli job pakdo.</span></h1>
+<p class="sub">50 pages ka practical roadmap: resume, LinkedIn, interview aur 30-day action plan. Hinglish mein, bina mehngi counselling ya “job guarantee” course ke.</p>
+<div class="cta-row"><a class="btn" href="#buy" data-buy>Abhi download karo</a><a class="btn ghost" href="#inside">Andar kya hai?</a></div>
+<ul class="ticks"><li>Instant PDF</li><li>Tier-2/3 students ke liye</li><li>Ready templates</li></ul>
+</div>
+<div class="stage" id="stage">
+<span class="chip c1">📄 ATS Resume</span><span class="chip c2">🎯 STAR Method</span><span class="chip c3">💼 Offer Letter</span><span class="chip c4">📅 30-Day Plan</span>
+<div class="book" id="book"><div class="b"></div><div class="s"></div><div class="f"><small>Edition 2026 · Hinglish</small><h3>Degree Hai,<br>Job Kahan Hai?</h3><em>College se Corporate tak</em></div></div>
+</div>
+</div></header>
+
+
+<div class="mq" aria-hidden="true"><div><span>📄 ATS Resume</span><span>🔗 LinkedIn</span><span>🎤 Interview</span><span>💰 Salary Negotiation</span><span>🚀 Projects</span><span>📅 30-Day Plan</span><span>📄 ATS Resume</span><span>🔗 LinkedIn</span><span>🎤 Interview</span><span>💰 Salary Negotiation</span><span>🚀 Projects</span><span>📅 30-Day Plan</span></div></div>
+<section class="pain"><div class="wrap">
+<div class="head rv"><h2>Kya yeh aapki kahani hai?</h2><p>College mein theory padhai, par job kaise milti hai, yeh syllabus mein nahi tha. Yeh book wahi gap bharti hai.</p></div>
+<div class="grid g3">
+<div class="tilt rv"><h3>“Experience nahi hai”</h3><p>Har JD mein 2-3 saal experience likha hota hai. Chapter 5 mein simulated projects se proof-of-work banana sikhoge.</p></div>
+<div class="tilt rv"><h3>“Resume reject ho raha hai”</h3><p>ATS-friendly one-page resume, before/after bullets aur checklist, sab ready hai.</p></div>
+<div class="tilt rv"><h3>“Interview mein ghabrahat”</h3><p>Common questions ke jawab, STAR method aur mock practice ka system.</p></div>
+</div></div></section>
+
+<section class="alt" id="inside"><div class="wrap">
+<div class="head rv"><h2>10 chapters. Ek clear path.</h2><p>Har chapter mein exercise hai, sirf padhna nahi, karna bhi hai.</p></div>
+<div class="grid g3">
+<div class="tilt rv"><div class="ico">🧭</div><h3>Employment Reality</h3><p>Experience paradox, unemployment vs underemployment, aur kya aapke control mein hai.</p></div>
+<div class="tilt rv"><div class="ico">🏢</div><h3>Indian Job Market</h3><p>MNC, startups, SMEs, agencies. Fake job offers se kaise bachein, NCS aur NAPS portals.</p></div>
+<div class="tilt rv"><div class="ico">🎓</div><h3>Degree se Career</h3><p>BA, BCom, BSc, BTech ke liye role mapping aur career decision matrix.</p></div>
+<div class="tilt rv"><div class="ico">🛠️</div><h3>Skills Recruiters Dekhte Hain</h3><p>Excel, communication, tools aur 14-day skill-building plan.</p></div>
+<div class="tilt rv"><div class="ico">🚀</div><h3>Experience Banao</h3><p>Self-created projects, internships aur portfolio, bina kisi job ke.</p></div>
+<div class="tilt rv"><div class="ico">📄</div><h3>Shortlisting Resume</h3><p>Anatomy, action verbs, ATS formatting aur pre-submission checklist.</p></div>
+<div class="tilt rv"><div class="ico">🔗</div><h3>LinkedIn &amp; Networking</h3><p>Headline, outreach templates, job portal strategy aur application tracker.</p></div>
+<div class="tilt rv"><div class="ico">🎤</div><h3>Interview System</h3><p>4 interview stages, top questions, STAR method aur etiquette checklist.</p></div>
+<div class="tilt rv"><div class="ico">💰</div><h3>Salary &amp; Offer Letter</h3><p>CTC vs in-hand, bond red flags aur negotiation script.</p></div>
+</div></div></section>
+
+<section><div class="wrap">
+<div class="head rv"><h2>Job nahi mil rahi? Strategy badlo.</h2><p>Chapter 10 ek diagnostic framework deta hai: calls nahi aa rahi toh resume, offers nahi mil rahe toh interview prep.</p></div>
+<div class="cmp">
+<div class="tilt no rv"><h3>Aise job search mat karo</h3><ul><li>500 jagah blind apply karna</li><li>Ek hi resume sabke liye</li><li>₹50,000 ka course, certificate se job ki umeed</li><li>“Training fee” maangne wali company ko paise dena</li></ul></div>
+<div class="tilt yes rv"><h3>Aise karo</h3><ul><li>2 target roles fix karo</li><li>Har JD ke hisab se resume customise karo</li><li>Free resources + portfolio proof</li><li>Weekly metrics se strategy check karo</li></ul></div>
+</div></div></section>
+
+<section class="alt"><div class="wrap">
+<div class="head rv"><h2>Ready-to-use templates, sath mein</h2><p>Book ke end mein print karke fill karne wale worksheets aur copy-paste templates hain.</p></div>
+<div class="tbl rv"><table>
+<tr><th>Template</th><th>Kahan use hoga</th></tr>
+<tr><td>Career Option Comparison Matrix</td><td>Top 3 career choices score karna</td></tr>
+<tr><td>Job Application Tracker</td><td>Date, company, role, platform, status</td></tr>
+<tr><td>One-Page Fresher Resume</td><td>Apni details bharke PDF export</td></tr>
+<tr><td>Recruiter &amp; Alumni Outreach Messages</td><td>LinkedIn par connect aur guidance</td></tr>
+<tr><td>Weekly Job-Search Review</td><td>Applications aur calls ka dashboard</td></tr>
+<tr><td>Salary Negotiation Script</td><td>Offer ke baad baat karna</td></tr>
+</table></div>
+</div></section>
+
+<section><div class="wrap">
+<div class="head rv"><h2>Yeh book kiske liye hai?</h2></div>
+<div class="grid g2">
+<div class="tilt rv"><h3>Final-year aur recent graduates</h3><p>Jinhe samajh nahi aa raha ki degree ke baad shuru kahan se karein.</p></div>
+<div class="tilt rv"><h3>Tier-2 / tier-3 college students</h3><p>Jinke college mein placement cell nahi hai ya networking limited hai.</p></div>
+<div class="tilt rv"><h3>Career switchers (freshers)</h3><p>Jo apni degree se alag role try karna chahte hain.</p></div>
+<div class="tilt rv"><h3>Self-learners</h3><p>Jo expensive coaching ke bina khud structured plan follow karna chahte hain.</p></div>
+</div></div></section>
+
+<section class="alt" id="buy"><div class="wrap price">
+<div class="pcard tilt">
+<h2>Apna first-job roadmap lo</h2>
+<p>Instant PDF · Hinglish · Edition 2026</p>
+<div class="amt"><s id="mrp"></s><span id="price"></span></div>
+<ul><li>50-page complete career blueprint (PDF)</li><li>10 chapters with exercises</li><li>Worksheets + resume template</li><li>30-day first-job action plan</li></ul>
+<a class="btn" href="#" data-buy>Abhi kharidein</a>
+<div class="note">Yeh guide educational hai; placement guarantee nahi deta.</div>
+</div></div></section>
+
+<section><div class="wrap" style="max-width:760px">
+<div class="head rv"><h2>Aksar pooche jane wale sawal</h2></div>
+<details class="rv"><summary>Kya yeh job guarantee deta hai?</summary><p>Nahi. Yeh ek practical guide hai jo aapki taiyari, resume aur interview skills improve karti hai. Result aapki mehnat aur market par depend karta hai.</p></details>
+<details class="rv"><summary>Kaunsi degree ke liye hai?</summary><p>BA, BCom, BBA, BSc, BCA, BTech sab ke liye. Chapter 3 mein degree-wise role mapping hai.</p></details>
+<details class="rv"><summary>Book kis language mein hai?</summary><p>Hinglish: Hindi aur English ka mix, jo easily samajh aaye.</p></details>
+<details class="rv"><summary>Mujhe kya milega?</summary><p>Ek 50-page PDF jisme 10 chapters, worksheets, resume template aur 30-day action plan hai.</p></details>
+<details class="rv"><summary>Mobile par padh sakta hoon?</summary><p>Haan, PDF kisi bhi phone, tablet ya laptop par khulta hai.</p></details>
+</div></section>
+
+<footer><div class="wrap"><p><b>Disclaimer:</b> Yeh e-book sirf educational guidance ke liye hai. Hum recruitment agency ya guaranteed placement provider nahi hain. Job offers aur company details khud verify karein.</p><p>© 2026 Degree Hai, Job Kahan Hai?</p></div></footer>
+
+<div class="sticky"><b id="price2"></b><a class="btn" href="#buy" data-buy>Abhi kharidein</a></div>
+
+<script>
+/* ====== EDIT HERE ====== */
+var CONFIG={price:"₹149",mrp:"₹999",buyLink:"#buy"};
+/* ======================= */
+document.getElementById("price").textContent=CONFIG.price;
+document.getElementById("mrp").textContent=CONFIG.mrp;
+document.getElementById("price2").textContent=CONFIG.price;
+document.querySelectorAll("[data-buy]").forEach(function(a){if(CONFIG.buyLink!=="#buy"&&a.textContent.match(/kharid|download|lo$/i))a.href=CONFIG.buyLink});
+var reduce=matchMedia("(prefers-reduced-motion:reduce)").matches;
+/* scroll reveal */
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll(".rv").forEach(function(el){io.observe(el)});
+document.querySelectorAll("[data-n]").forEach(function(el){var n=+el.dataset.n,done=0;new IntersectionObserver(function(es){if(es[0].isIntersecting&&!done){done=1;if(reduce)return;var t0=performance.now();(function f(t){var p=Math.min((t-t0)/1200,1);el.textContent=Math.round(n*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(f)})(t0)}}).observe(el)});
+if(!reduce){
+/* book follows pointer */
+var st=document.getElementById("stage"),bk=document.getElementById("book");
+st.addEventListener("pointermove",function(e){var r=st.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;bk.style.transform="rotateY("+(-28+x*40)+"deg) rotateX("+(6-y*24)+"deg)"});
+st.addEventListener("pointerleave",function(){bk.style.transform=""});
+/* card tilt */
+document.querySelectorAll(".tilt").forEach(function(c){
+c.addEventListener("pointermove",function(e){if(e.pointerType==="touch")return;var r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform="rotateY("+x*10+"deg) rotateX("+-y*10+"deg) translateY(-4px)"});
+c.addEventListener("pointerleave",function(){c.style.transform=""})});
+}
+</script>
+</body>
+</html>
